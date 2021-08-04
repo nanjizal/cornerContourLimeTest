@@ -50,7 +50,7 @@ class CornerContourLime extends Application {
     public var programColor:     GLProgram;
     public var bufColor:         GLBuffer;
     
-    var arr32:                   Float32Array;
+    var arr32:                   haxe.io.Float32Array;
     var len:                     Int;
     var totalTriangles:          Int;
     var bufferLength:            Int;
@@ -139,7 +139,7 @@ class CornerContourLime extends Application {
          // xy rgba = 6
         len = Std.int( totalTriangles * 6 * 3 );
         var j = 0;
-        arr32 = new Float32Array( len );
+        arr32 = new haxe.io.Float32Array( len );
         for( i in 0...totalTriangles ){
             pen.pos = i;
             color = Std.int( data.color );

@@ -8,8 +8,4 @@
     <haxelib name="fracs"/>
     <haxelib name="justPath"/>
     <haxelib name="cornerContour"/>
-    <haxelib name="pallette"/>
-    <haxelib name="hxPolyK"/>
-    <haxelib name="poly2trihx"/>
-    <haxelib name="hxGeomAlgo"/>
 </project>

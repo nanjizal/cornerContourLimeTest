@@ -20,7 +20,6 @@ var fragmentString: String =
     "precision mediump float;" +
     "precision mediump int;" + 
     #end
-    'precision mediump float;'+
     'varying vec4 vcol;' +
     'void main(void) {' +
         'vec4 color = vec4(vcol.rgb, vcol.a );' +

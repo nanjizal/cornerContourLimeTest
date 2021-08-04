@@ -887,7 +887,7 @@ ApplicationMain.main = function() {
 ApplicationMain.create = function(config) {
 	ManifestResources.init(config);
 	var app = new cornerContourLimeTest_CornerContourLime();
-	app.meta.h["build"] = "1";
+	app.meta.h["build"] = "3";
 	app.meta.h["company"] = "Nanjizal";
 	app.meta.h["file"] = "cornerContourLimeTest.CornerContourLime";
 	app.meta.h["name"] = "CornerContourLimeTest";
@@ -10026,7 +10026,7 @@ cornerContourLimeTest_CornerContourLime.prototype = $extend(lime_app_Application
 			}
 			gl.attachShader(program,tmp);
 			var shader = gl.createShader(gl.FRAGMENT_SHADER);
-			gl.shaderSource(shader,"precision mediump float;" + "precision mediump int;" + "precision mediump float;" + "varying vec4 vcol;" + "void main(void) {" + "vec4 color = vec4(vcol.rgb, vcol.a );" + "gl_FragColor = color;" + "}");
+			gl.shaderSource(shader,"precision mediump float;" + "precision mediump int;" + "varying vec4 vcol;" + "void main(void) {" + "vec4 color = vec4(vcol.rgb, vcol.a );" + "gl_FragColor = color;" + "}");
 			gl.compileShader(shader);
 			var tmp;
 			if(!gl.getShaderParameter(shader,gl.COMPILE_STATUS)) {
@@ -40681,7 +40681,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 335682;
+	this.version = 474111;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = "lime.utils.AssetCache";
@@ -42975,7 +42975,7 @@ cornerContour_Contour.smallDotScale = 0.07;
 var cornerContour_CurveMath_quadStep = 0.03;
 var cornerContour_CurveMath_cubicStep = 0.03;
 var cornerContourLimeTest_ShaderColor2D_vertexString = "precision mediump float;" + "precision mediump int;" + "attribute vec2 vertexPosition;" + "attribute vec4 vertexColor;" + "varying vec4 vcol;" + "void main(void) {" + " gl_Position = vec4(vertexPosition, .0, 1.0);" + " vcol = vertexColor;" + "}";
-var cornerContourLimeTest_ShaderColor2D_fragmentString = "precision mediump float;" + "precision mediump int;" + "precision mediump float;" + "varying vec4 vcol;" + "void main(void) {" + "vec4 color = vec4(vcol.rgb, vcol.a );" + "gl_FragColor = color;" + "}";
+var cornerContourLimeTest_ShaderColor2D_fragmentString = "precision mediump float;" + "precision mediump int;" + "varying vec4 vcol;" + "void main(void) {" + "vec4 color = vec4(vcol.rgb, vcol.a );" + "gl_FragColor = color;" + "}";
 haxe_Serializer.USE_CACHE = false;
 haxe_Serializer.USE_ENUM_INDEX = false;
 haxe_Serializer.BASE64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:";
