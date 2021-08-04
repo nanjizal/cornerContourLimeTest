@@ -8,4 +8,4 @@ cornerContour lime test
 // so can't publish dox yet.
 [dox](https://nanjizal.github.io/cornerContourLimeTest/pages/)   
 
-
+haxe c++ compiles but crashes at runtime, js version works fine.
