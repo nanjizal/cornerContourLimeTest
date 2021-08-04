@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+    <meta title="CornerContourLimeTest" package="net.nanjizal.cornerContourLimeTest" version="1.0.0" company="Nanjizal" />
+    <app main="cornerContourLimeTest.CornerContourLime" path="Export" file="cornerContourLimeTest.CornerContourLime" />
+    <window width="1024" height="768" antialiasing="4"/>
+    <source path="src" />
+    <haxelib name="lime" />
+    <haxelib name="fracs"/>
+    <haxelib name="justPath"/>
+    <haxelib name="cornerContour"/>
+    <haxelib name="pallette"/>
+    <haxelib name="hxPolyK"/>
+    <haxelib name="poly2trihx"/>
+    <haxelib name="hxGeomAlgo"/>
+</project>
